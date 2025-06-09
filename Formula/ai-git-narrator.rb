@@ -14,6 +14,7 @@ class AiGitNarrator < Formula
   end
 
   test do
-    assert_match "OVERVIEW: Generate git commit messages and PR descriptions using AI", shell_output("#{bin}/ai-git-narrator --help")
+    assert_match "OVERVIEW: Generate git commit messages and PR descriptions using AI",
+                 shell_output("#{bin}/ai-git-narrator --help")
   end
 end
